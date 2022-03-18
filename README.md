@@ -122,3 +122,33 @@ def points(games):
             s.append(1)
     return sum(s) 
  ```   
+Pg- 8: 
+Given an array of integers, return a new array with each value doubled.
+For example:
+[1, 2, 3] --> [2, 4, 6]
+
+ > My Solution:
+```python
+def maps(a):
+    return list(map(lambda x:2*x, a))
+```
+Pg- 9:
+
+A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+
+Return True if yes, False otherwise :)
+ 
+ > My Solution:
+```python
+def hero(bullets, dragons):
+    if bullets>= dragons*2:
+        return True
+    else:
+        return False
+        
+ > My Solution-2 :
+ 
+def hero(bullets, dragons):
+    return bullets >= (2 * dragons)
+
+```
